@@ -21,15 +21,3 @@ function palindrome (str){
     return char === str[str.length-1-i]
     })
 }
-
-function pyramid(n){
-    for(row=0;row<n;row++){
-        let stair = "";
-        for(column=0;column<n*2-1;column++){
-            if (column>=row){
-                stair+="#"
-            }else{stair+=""}
-        }
-        console.log(stair)
-    }
-}
