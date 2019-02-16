@@ -15,3 +15,15 @@ function largestOfFour(arr) {
     
     largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
     (4) [5, 27, 39, 1001]
+
+//or 
+
+function largestOfFour(arr) {
+    for (subArray of arr){
+     subArray.sort((a, b) => a - b);
+    }
+  
+    return [arr[0][3], arr[1][3], arr[2][3], arr[3][3]];
+  }
+  
+  largestOfFour([[4, 5, 1, 3], [13, 27, 18, 26], [32, 35, 37, 39], [1000, 1001, 857, 1]]);
