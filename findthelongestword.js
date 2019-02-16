@@ -15,3 +15,15 @@ function findLongestWordLength(str) {
     }
     return count;
   }
+
+//or
+
+function findLongestWordLength(str) {
+let count = 0;
+ str.split(' ').forEach(
+  (element) => {if(element.length>count){
+    count=element.length;
+  }}
+);
+return count;
+}
