@@ -5,16 +5,18 @@
 [5,6,3,9] -->true
 
 */
-
-function almostIncreasingSequence(arr){
+const almostIncreasingSequence = (arr) => {
     let count = 0;
-    for(let i=0 ; i<arr.length ; i++){
+    for(let i = 0 ; i<arr.length ; i++){
         if(arr[i]>arr[i+1]){
             count++;
+            if(arr[i]>arr[i+2]){
+                return false;
+            }
         }
     }
-   if (count<=1){
-       return true
-   }
-   return false
+    if (count<=1){
+        return true
+    }
+    return false;
 }
