@@ -1,0 +1,1 @@
+const compareIntegers = (a:string,b:string):string => parseInt(a)<parseInt(b) ? 'less' : parseInt(a)>parseInt(b) ? 'greater' : 'equal';
