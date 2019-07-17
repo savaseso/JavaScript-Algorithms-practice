@@ -1,4 +1,4 @@
-const domainType = (arr) => {
+const domainType = (arr:string[]):string[] => {
  
     let domainArray = [];
 
