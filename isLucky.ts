@@ -11,6 +11,7 @@ const isLucky = (n:number):boolean =>{
     },0)
     return firstNumber === secondNumber
 }
+
 console.log(isLucky(1230)) //true
 console.log(isLucky(239017))//false
 console.log(isLucky(1661))//true
