@@ -6,8 +6,8 @@ const uniqueDigitProducts = (a:number[]):number => {
         } else {
            const moreDigit = number.toString().split('');
            let product:number = 1;
-          for(let i = 0 ; i < moreDigit.length ; i++){
-                product *= parseInt(moreDigit[i])
+          for(let number of moreDigit){
+                product *= parseInt(number)
              
           }
           digits.push(product)
