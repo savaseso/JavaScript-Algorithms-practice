@@ -1,8 +1,8 @@
  const sumOfTwo = (a:number[],b:number[],v:number) => {
     const numbers:number[] = [];
-    for(let i = 0 ; i < a.length ; i++){
-        for(let j = 0 ; j < b.length ; j++){
-            numbers.push(a[i]+b[j])
+    for(let numberA of a){
+        for(let numberB of b){
+            numbers.push(numberA+numberB)
         }}
         console.log(numbers)
     return numbers.includes(v)
